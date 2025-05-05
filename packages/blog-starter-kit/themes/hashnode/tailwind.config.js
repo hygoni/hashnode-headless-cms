@@ -15,9 +15,6 @@ module.exports = {
 				sans: [fontInterVar, ...defaultTheme.fontFamily.sans],
 				heading: [fontPlusJakartaVar, ...defaultTheme.fontFamily.sans],
 			},
-      maxWidth: {
-        'screen-md': '1000px',
-      },
 			colors: {
 				'accent-1': '#FAFAFA',
 				'accent-2': '#EAEAEA',
