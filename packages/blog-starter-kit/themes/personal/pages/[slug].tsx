@@ -171,7 +171,7 @@ export default function PostOrPage(props: Props) {
 	return (
 		<AppProvider publication={publication} post={maybePost} page={maybePage}>
 			<Layout>
-				<Container className="mx-auto flex max-w-5xl flex-col items-stretch gap-10 px-5 py-10">
+				<Container className="mx-auto flex max-w-6xl flex-col items-stretch gap-10 px-5 py-10">
 					<PersonalHeader />
 					<article className="flex flex-col items-start gap-10 pb-10">
 						{props.type === 'post' && <Post {...props} />}
