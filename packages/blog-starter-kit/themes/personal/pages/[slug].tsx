@@ -18,6 +18,8 @@ import { Footer } from '../components/footer';
 import { Layout } from '../components/layout';
 import { MarkdownToHtml } from '../components/markdown-to-html';
 import { PersonalHeader } from '../components/personal-theme-header';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import {
 	PageByPublicationDocument,
 	PostFullFragment,
@@ -171,6 +173,8 @@ export default function PostOrPage(props: Props) {
 	return (
 		<AppProvider publication={publication} post={maybePost} page={maybePage}>
 			<Layout>
+				<Analytics/>
+				<SpeedInsights/>
 				<Container className="mx-auto flex max-w-6xl flex-col items-stretch gap-10 px-5 py-10">
 					<PersonalHeader />
 					<article className="flex flex-col items-start gap-10 pb-10">
